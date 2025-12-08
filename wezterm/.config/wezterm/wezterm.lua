@@ -11,7 +11,7 @@ local palette = {
 }
 
 return {
-  enable_wayland = true,   -- stable for your setup right now
+  enable_wayland = false,   -- stable for your setup right now
   font = wezterm.font_with_fallback({
     "JetBrainsMono Nerd Font", "JetBrains Mono", "Fira Code", "Noto Color Emoji"
   }),
@@ -50,9 +50,9 @@ return {
   keys = {
     {key="Enter", mods="ALT",        action=wezterm.action.SplitHorizontal{domain="CurrentPaneDomain"}},
     {key="Enter", mods="ALT|SHIFT",  action=wezterm.action.SplitVertical{domain="CurrentPaneDomain"}},
-    {key="h",    mods="ALT",         action=wezterm.action.ActivatePaneDirection("Left")},
-    {key="j",    mods="ALT",         action=wezterm.action.ActivatePaneDirection("Down")},
-    {key="k",    mods="ALT",         action=wezterm.action.ActivatePaneDirection("Up")},
+    {key="j",    mods="ALT",         action=wezterm.action.ActivatePaneDirection("Left")},
+    {key="k",    mods="ALT",         action=wezterm.action.ActivatePaneDirection("Down")},
+    {key="i",    mods="ALT",         action=wezterm.action.ActivatePaneDirection("Up")},
     {key="l",    mods="ALT",         action=wezterm.action.ActivatePaneDirection("Right")},
     {key="C",    mods="CTRL|SHIFT",  action=wezterm.action.CopyTo "Clipboard"},
     {key="V",    mods="CTRL|SHIFT",  action=wezterm.action.PasteFrom "Clipboard"},
