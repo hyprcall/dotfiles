@@ -1,0 +1,179 @@
+/* --- Global Styles --- */
+* {
+  font-family: 'SF Pro Text', 'Inter', 'Segoe UI', 'NotoSans Nerd Font', sans-serif;
+  font-size: 13px;
+  min-height: 0;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+
+/* --- Waybar Container --- */
+#waybar {
+  background: transparent;
+  color: #f5f5f5;
+  margin: 0px;
+  font-weight: 500;
+}
+
+/* --- Left Modules (Individual Blocks) --- */
+#workspaces,
+#custom-uptime,
+#cpu {
+  background-color: #1a1b26;
+  padding: 0.3rem 0.7rem;
+  margin: 5px 0px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#workspaces {
+  padding: 2px;
+  margin-left: 7px;
+  margin-right: 5px;
+}
+
+#custom-uptime {
+  margin-right: 5px;
+}
+
+/* Hover effects */
+#custom-uptime:hover,
+#cpu:hover {
+  background-color: rgb(41, 42, 53);
+}
+
+/* --- Workspaces --- */
+#workspaces button {
+  color: #ff6b6b; /* default inactive red */
+  border-radius: 5px;
+  padding: 0.3rem 0.6rem;
+  background: transparent;
+  transition: all 0.2s ease-in-out;
+  border: none;
+  outline: none;
+}
+
+#workspaces button.active {
+  color: #ff3c3c;
+  background-color: rgba(255, 60, 60, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(255, 60, 60, 0.2);
+}
+
+#workspaces button:hover {
+  background: rgb(41, 42, 53);
+  color: #ff4b4b;
+}
+
+/* --- Clock --- */
+#clock {
+  background-color: #1a1b26;
+  padding: 0.3rem 0.7rem;
+  margin: 5px 0px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(255, 60, 60, 0.2);
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+  color: #ff4b4b;
+}
+
+#clock:hover {
+  background-color: rgba(255, 60, 60, 0.1);
+}
+
+/* --- Custom Pomodoro --- */
+#custom-pomodoro {
+  background-color: #1a1b26;
+  padding: 0.3rem 0.7rem;
+  margin: 5px 0px;
+  border-radius: 6px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  color: #ff6b6b;
+  font-weight: 600;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, outline 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#custom-pomodoro:hover {
+  background-color: rgb(41, 42, 53);
+  color: #ff4b4b;
+  outline: 1px solid rgba(255, 60, 60, 0.3);
+  outline-offset: -1px;
+}
+
+#custom-pomodoro.work,
+#custom-pomodoro.break {
+  color: #ff3c3c;
+  background-color: rgba(255, 60, 60, 0.1);
+  box-shadow: inset 0 0 0 1px rgba(255, 60, 60, 0.2);
+}
+
+/* --- Right Modules --- */
+#bluetooth,
+#pulseaudio,
+#backlight,
+#network,
+#custom-lock,
+#battery {
+  background-color: #1a1b26;
+  padding: 0.3rem 0.7rem;
+  margin: 5px 0px;
+  border-radius: 0;
+  border: none;
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+#bluetooth:hover,
+#pulseaudio:hover,
+#backlight:hover,
+#network:hover,
+#custom-lock:hover,
+#battery:hover {
+  background-color: rgb(41, 42, 53);
+}
+
+/* Rounded ends */
+#bluetooth {
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+
+#battery {
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  margin-right: 7px;
+}
+
+/* --- Color Assignments --- */
+#custom-uptime { color: #ff6b6b; }
+#cpu { color: #f5f5f5; }
+#clock { color: #ff4b4b; }
+
+#pulseaudio,
+#backlight,
+#network,
+#custom-lock,
+#battery {
+  color: #f5f5f5;
+}
+
+#network.disconnected { color: #ff3c3c; }
+#battery.warning:not(.charging) { color: #ff3c3c; }
+#battery.charging { color: #a6d189; } /* keep green for clarity */
+
+/* Bluetooth icons */
+#bluetooth { color: #888888; font-size: 16px; }
+#bluetooth.on { color: #ff4b4b; }
+#bluetooth.connected { color: #ff3c3c; }
+
+/* --- Tooltip --- */
+tooltip {
+  background-color: #1a1b26;
+  color: #f5f5f5;
+  padding: 5px 12px;
+  margin: 5px 0px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 60, 60, 0.3);
+  box-shadow: 0 4px 12px rgba(255, 60, 60, 0.1);
+  font-size: 12px;
+}

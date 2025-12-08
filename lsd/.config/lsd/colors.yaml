@@ -1,0 +1,45 @@
+user: 230          # light text for owner
+group: 187         # slightly dimmer for group
+
+permission:
+  read: dark_red
+  write: dark_yellow
+  exec: red
+  exec-sticky: 160
+  no-access: 245
+  octal: 203
+  acl: dark_cyan
+  context: cyan
+
+date:
+  hour-old: 203    # fresh = brighter red
+  day-old: 168
+  older: 245       # old stuff = muted
+
+size:
+  none: 245
+  small: 168
+  medium: 203
+  large: 196       # huge = bright red
+
+inode:
+  valid: 203
+  invalid: 245
+
+links:
+  valid: 203
+  invalid: 245
+
+tree-edge: 245
+
+git-status:
+  default: 245
+  unmodified: 245
+  ignored: 240
+  new-in-index: dark_green
+  new-in-workdir: dark_green
+  typechange: dark_yellow
+  deleted: dark_red
+  renamed: dark_green
+  modified: dark_yellow
+  conflicted: dark_red

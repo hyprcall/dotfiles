@@ -1,0 +1,103 @@
+# == Classic ==
+# Shorthand for oldschool `ls` behavior.
+classic: false
+
+# == Blocks ==
+# Columns and their order in long/tree view.
+# Possible values: permission, user, group, context, size, date, name, inode, links, git
+blocks:
+  - permission
+  - user
+  - group
+  - size
+  - date
+  - name
+
+# == Color ==
+# General color behavior.
+color:
+  # When to colorize output: never, auto, always
+  when: always
+  # Color theme:
+  #   default = built-in
+  #   custom  = use ~/.config/lsd/colors.yaml
+  theme: custom
+
+# == Date ==
+# date, locale, relative, or '+<strftime>'
+date: relative
+
+# == Dereference ==
+# Whether to dereference symlinks.
+dereference: false
+
+# == Display ==
+# What items to display. Comment out for default behavior.
+# Possible values: all, almost-all, directory-only
+# display: all
+
+# == Icons ==
+icons:
+  # When to show icons: always, auto, never
+  when: auto
+  # Icon theme: fancy, unicode
+  theme: fancy
+  # Separator between icon and name
+  separator: " "
+
+# == Ignore Globs ==
+# ignore-globs:
+#   - .git
+
+# == Indicators ==
+indicators: false
+
+# == Layout ==
+# grid, tree, oneline
+layout: grid
+
+# == Recursion ==
+recursion:
+  enabled: false
+  # depth: 3
+
+# == Size ==
+# default, short, bytes
+size: default
+
+# == Permission ==
+# rwx, octal, attributes (win), disable
+# permission: rwx
+
+# == Sorting ==
+sorting:
+  # extension, name, time, size, version
+  column: name
+  reverse: false
+  # first, last, none
+  dir-grouping: none
+
+# == No Symlink ==
+no-symlink: false
+
+# == Total size ==
+total-size: false
+
+# == Hyperlink ==
+# always, auto, never
+hyperlink: never
+
+# == Symlink arrow ==
+symlink-arrow: "⇒"
+
+# == Header ==
+header: false
+
+# == Literal ==
+# Whether to show quotes around filenames.
+literal: false
+
+# == Truncate owner ==
+truncate-owner:
+  after:
+  marker: ""
