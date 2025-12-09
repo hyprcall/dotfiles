@@ -1,0 +1,101 @@
+/*
+ * Rofi theme based on SwayNC style
+ * Matches:
+ *  - Background: rgba(18, 17, 15, 0.85)
+ *  - Border: 2px solid #ff0012
+ *  - Accent: #ff0012
+ *  - Text: #e6e6e6 (main), #b3b3b3 (dim)
+ */
+
+* {
+    /* Theme Colors */
+    bg-base:        rgba(18, 17, 15, 0.85);
+    bg-selected:    #ff0012;
+    text-main:      #e6e6e6;
+    text-dim:       #b3b3b3;
+    border-col:     #ff0012;
+
+    /* Global properties */
+    background-color: transparent;
+    text-color:       @text-main;
+    font:             "Sans 12";
+}
+
+window {
+    transparency:     "real";
+    background-color: @bg-base;
+    border:           2px;
+    border-color:     @border-col;
+    border-radius:    12px;
+    width:            500px;
+    padding:          10px;
+}
+
+mainbox {
+    spacing: 10px;
+    children: [ inputbar, listview ];
+}
+
+inputbar {
+    background-color: transparent;
+    text-color:       @text-main;
+    children:         [ prompt, entry ];
+    border-radius:    8px;
+    padding:          5px;
+}
+
+prompt {
+    padding:    10px;
+    text-color: @text-main;
+    font:       "Sans Bold 12";
+}
+
+entry {
+    padding:     10px;
+    text-color:  @text-main;
+    placeholder: "Search...";
+    placeholder-color: @text-dim;
+}
+
+listview {
+    columns:      1;
+    lines:        8;
+    scrollbar:    false;
+    spacing:      5px;
+    margin:       5px 0 0 0;
+}
+
+element {
+    padding:       10px;
+    border-radius: 8px;
+    spacing:       10px;
+}
+
+/* Normal Row State */
+element normal.normal {
+    background-color: transparent;
+    text-color:       @text-main;
+}
+
+/* Alternate Row State - Fixes zebra striping */
+element alternate.normal {
+    background-color: transparent;
+    text-color:       @text-main;
+}
+
+/* Selected Row State */
+element selected.normal {
+    background-color: @bg-selected;
+    text-color:       #0d0d0d; /* Dark text on red button for contrast */
+}
+
+element-text {
+    background-color: transparent;
+    text-color:       inherit;
+    vertical-align:   0.5;
+}
+
+element-icon {
+    size:             24px;
+    background-color: transparent;
+}

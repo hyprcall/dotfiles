@@ -132,3 +132,6 @@ alias bat='bat --paging=always --style=header,grid,numbers --pager="less -R -F -
 
 # -------- dircolors ---------
 eval "$(dircolors -b ~/.dircolors)"
+
+# -------- Gemini ----------
+alias gemini='cd ~/Gemini && gemini'

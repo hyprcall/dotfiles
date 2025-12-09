@@ -1,0 +1,88 @@
+{
+  "positionX": "center",
+  "positionY": "top",
+  "control-center-positionX": "center",
+  "control-center-positionY": "bottom",
+  "control-center-margin-top": 0,
+  "control-center-margin-bottom": 20,
+  "control-center-margin-right": 0,
+  "control-center-margin-left": 0,
+  "notification-window-width": 500,
+  "cssPriority": "user",
+  "widgets": [
+    "title",
+    "dnd",
+    "mpris",
+    "buttons-grid#volume",
+    "buttons-grid",
+    "notifications"
+  ],
+  "widget-config": {
+    "title": {
+      "text": "Welcome Hypr!",
+      "clear-all-button": true,
+      "button-text": "Clear All"
+    },
+    "dnd": {
+      "text": "Do Not Disturb"
+    },
+    "mpris": {
+      "image-size": 96,
+      "image-radius": 12,
+      "ignore-list": [
+        "playerctld",
+        "org.mpris.MediaPlayer2.playerctld"
+      ]
+    },
+    "volume": {
+      "label": " ",
+      "show-per-app": true,
+      "show-per-app-icon": true,
+      "show-per-app-name": true,
+      "device": "alsa_output.usb-Razer_Razer_Nari_Ultimate-00.pro-output-1",
+      "on-click": "pamixer -t",
+      "on-scroll-up": "pamixer -i 5",
+      "on-scroll-down": "pamixer -d 5"
+    },
+    "buttons-grid": {
+      "actions": [
+        {
+          "label": "",
+          "command": "/home/hypr/.config/swaync/toggle_sunset.sh"
+        },
+        {
+          "label": "",
+          "command": "hyprlock"
+        },
+        {
+          "label": "",
+          "command": "systemctl reboot"
+        },
+        {
+          "label": "",
+          "command": "systemctl poweroff"
+        }
+      ]
+    },
+    "buttons-grid#volume": {
+      "actions": [
+        {
+          "label": "",
+          "command": "pamixer -d 5"
+        },
+        {
+          "label": "",
+          "command": "pamixer -t"
+        },
+        {
+          "label": "",
+          "command": "pamixer -i 5"
+        },
+        {
+          "label": "",
+          "command": "pavucontrol"
+        }
+      ]
+    }
+  }
+}

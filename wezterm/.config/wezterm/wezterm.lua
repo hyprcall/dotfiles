@@ -1,13 +1,13 @@
 local wezterm = require 'wezterm'
 
 local palette = {
-  bg      = "#121015",
-  surface = "#1A1217",
-  text    = "#E6D9DF",
-  text2   = "#BBAEB4",
-  red1    = "#FF4C4C",
-  red2    = "#FF6B6B",
-  selection = "#2A1B22",
+  bg      = "#0d0d0d",
+  surface = "#12110F",
+  text    = "#e6e6e6",
+  text2   = "#b3b3b3",
+  red1    = "#ff0012",
+  red2    = "#ff0013",
+  selection = "#49b1f5",
 }
 
 return {
@@ -18,11 +18,11 @@ return {
   font_size = 16.0,
   line_height = 1.5,
 
-  hide_tab_bar_if_only_one_tab = false,
+  hide_tab_bar_if_only_one_tab = true,
   use_fancy_tab_bar = true,
 
-  window_padding = { left = 10, right = 10, top = 8, bottom = 8 },
-  window_background_opacity = 0.95,
+  window_padding = { left = 5, right = 5, top = 4, bottom = 4 },
+  window_background_opacity = 0.85,
 
   colors = {
     foreground = palette.text,

@@ -1,0 +1,158 @@
+/* Variables matching THEME_PALETTE.md */
+@define-color bg-deep #0d0d0d;
+@define-color bg-surface #12110F;
+@define-color accent-primary #ff0012;
+@define-color accent-secondary #49b1f5;
+@define-color text-main #e6e6e6;
+@define-color text-dim #b3b3b3;
+@define-color border-inactive #1f1f1f;
+
+/* Root Control Center */
+.control-center {
+    background: rgba(18, 17, 15, 0.85); /* bg-surface @ 0.85 */
+    border: 2px solid @accent-primary;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+/* Widgets */
+.widget-title {
+    color: @text-main;
+    background: @bg-deep;
+    padding: 5px 10px;
+    margin: 10px;
+    font-size: 1.5rem;
+    border-radius: 8px;
+}
+
+.widget-title > button {
+    font-size: 1rem;
+    color: @text-dim;
+    text-shadow: none;
+    background: @bg-surface;
+    border-radius: 6px;
+    box-shadow: none;
+    border: 1px solid @border-inactive;
+}
+
+.widget-title > button:hover {
+    background: @accent-secondary;
+    color: @bg-deep;
+}
+
+.widget-dnd {
+    background: @bg-deep;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    color: @text-main;
+}
+
+.widget-dnd > switch {
+    border-radius: 8px;
+    background: @bg-surface;
+}
+
+.widget-dnd > switch:checked {
+    background: @accent-primary;
+}
+
+.widget-label {
+    margin: 10px;
+}
+
+.widget-label > label {
+    font-size: 1.1rem;
+    color: @text-main;
+}
+
+.widget-mpris {
+    background: @bg-deep;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    color: @text-main;
+}
+
+.widget-mpris > box > button {
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.widget-volume {
+    background: @bg-deep;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    color: @text-main;
+}
+
+/* Button Grids (Volume & Power) */
+.widget-buttons-grid {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 8px;
+    background: @bg-deep;
+}
+
+.widget-buttons-grid > flowbox {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild {
+    padding: 0px;
+    margin: 0px;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+    background: @bg-surface;
+    border-radius: 8px;
+    margin: 5px 10px; /* Reduced side margin to fit 4 buttons better */
+    padding: 10px 0px; /* Use 0px horizontal padding and rely on min-width for uniformity */
+    font-size: 1.5rem;
+    min-width: 80px; /* Fixed width for ALL buttons to look even */
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+    background: @accent-primary;
+    color: @bg-deep;
+}
+
+/* Notifications */
+.notification-row {
+    outline: none;
+    margin: 0px;
+    padding: 5px 10px;
+}
+
+.notification {
+    background: rgba(18, 17, 15, 0.85); /* bg-surface @ 0.85 */
+    border-radius: 12px;
+    border: 1px solid @accent-primary;
+    margin: 5px 0;
+    box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    padding: 0;
+}
+
+.notification-content {
+    background: transparent;
+    padding: 10px;
+}
+
+.summary {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: @text-main;
+}
+
+.body {
+    font-size: 1rem;
+    color: @text-dim;
+}
+
+.time {
+    font-size: 0.8rem;
+    color: @text-dim;
+}
