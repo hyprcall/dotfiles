@@ -25,7 +25,7 @@ Here is what the current setup looks like:
 *Main Desktop Workflow*
 
 ![Rofi and Windows](assets/dotsexample2.png)
-*BTOP*
+*System Info*
 
 ## 🎨 Aesthetic & Palette
 
