@@ -1,7 +1,7 @@
 #   My Arch Linux Dotfiles
 
 > **Established:** November 2025  
-> **Theme:** Cybersecurity Dark / HyprCall
+> **Theme:** Code Red / HyprCall
 
 ## 👋 Introduction
 
@@ -29,7 +29,7 @@ Here is what the current setup looks like:
 
 ## 🎨 Aesthetic & Palette
 
-The setup follows a **"Cybersecurity Dark"** aesthetic, featuring deep blacks/greys with a sharp **Red (#ff0012)** primary accent.
+The setup follows a **"Code Red"** aesthetic, featuring deep blacks/greys with a sharp **Red (#ff0012)** primary accent.
 
 | Element | Color | Hex |
 | :--- | :--- | :--- |
