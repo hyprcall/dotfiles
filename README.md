@@ -1,4 +1,4 @@
-#   My Arch Linux Dotfiles
+# My Arch Linux Dotfiles
 
 > **Established:** November 2025  
 > **Theme:** Code Red / HyprCall
