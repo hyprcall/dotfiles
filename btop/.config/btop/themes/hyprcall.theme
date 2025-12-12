@@ -1,0 +1,78 @@
+# Bashtop/Bpytop/Btop theme "hyprcall"
+# Generated based on THEME_PALETTE.md - Cybersecurity Dark
+
+# Main background
+theme[main_bg]="#0d0d0d"
+
+# Main text color
+theme[main_fg]="#e6e6e6"
+
+# Title color for boxes
+theme[title]="#e6e6e6"
+
+# Highlight color for keyboard shortcuts
+theme[hi_fg]="#ff0012"
+
+# Background color of selected item in processes box
+theme[selected_bg]="#1f1f1f"
+
+# Foreground color of selected item in processes box
+theme[selected_fg]="#ff0012"
+
+# Color of inactive/disabled text
+theme[inactive_fg]="#b3b3b3"
+
+# Color of text appearing on top of graphs
+theme[graph_text]="#b3b3b3"
+
+# Background color of the percentage meters
+theme[meter_bg]="#1f1f1f"
+
+# Misc process box text color
+theme[proc_misc]="#b3b3b3"
+
+# Box outline color
+theme[cpu_box]="#1f1f1f"
+theme[mem_box]="#1f1f1f"
+theme[net_box]="#1f1f1f"
+theme[proc_box]="#1f1f1f"
+
+# Box divider line and small boxes line color
+theme[div_line]="#1f1f1f"
+
+# Gradients (Red -> Purple -> Blue)
+theme[temp_start]="#ff0012"
+theme[temp_mid]="#a258d3"
+theme[temp_end]="#49b1f5"
+
+theme[cpu_start]="#ff0012"
+theme[cpu_mid]="#a258d3"
+theme[cpu_end]="#49b1f5"
+
+theme[free_start]="#ff0012"
+theme[free_mid]="#a258d3"
+theme[free_end]="#49b1f5"
+
+theme[cached_start]="#ff0012"
+theme[cached_mid]="#a258d3"
+theme[cached_end]="#49b1f5"
+
+theme[available_start]="#ff0012"
+theme[available_mid]="#a258d3"
+theme[available_end]="#49b1f5"
+
+theme[used_start]="#ff0012"
+theme[used_mid]="#a258d3"
+theme[used_end]="#49b1f5"
+
+theme[download_start]="#ff0012"
+theme[download_mid]="#a258d3"
+theme[download_end]="#49b1f5"
+
+theme[upload_start]="#ff0012"
+theme[upload_mid]="#a258d3"
+theme[upload_end]="#49b1f5"
+
+theme[process_start]="#ff0012"
+theme[process_mid]="#a258d3"
+theme[process_end]="#49b1f5"

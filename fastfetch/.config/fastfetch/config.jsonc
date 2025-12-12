@@ -1,74 +1,116 @@
 {
     "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
     "logo": {
-        "source": "arch_small",
+        "source": "arch",
         "padding": {
             "top": 2,
-            "right": 2
+            "right": 2,
+            "left": 4
         },
         "color": {
-            "1": "red",
-            "2": "red"
+            "1": "#ff0012",
+            "2": "#ff0012"
         }
     },
     "display": {
         "separator": "  ",
         "color": {
-            "keys": "red",
-            "title": "red"
+            "keys": "#ff0012",
+            "title": "#ff0012"
         }
     },
     "modules": [
         {
             "type": "title",
-            "format": "{user}@{host-name}",
-            "keyColor": "red"
+            "format": "{1}@{2}",
+            "keyColor": "#ff0012"
         },
         "separator",
         {
             "type": "os",
             "key": " ",
-            "keyColor": "red"
+            "keyColor": "#ff0012"
+        },
+        {
+            "type": "host",
+            "key": "󰌢 ",
+            "keyColor": "#ff0012"
         },
         {
             "type": "kernel",
             "key": " ",
-            "keyColor": "red"
+            "keyColor": "#ff0012"
         },
         {
             "type": "uptime",
             "key": "󰅐 ",
-            "keyColor": "red"
+            "keyColor": "#ff0012"
         },
         {
             "type": "packages",
             "key": "󰏖 ",
-            "keyColor": "red"
+            "keyColor": "#ff0012"
+        },
+        {
+            "type": "shell",
+            "key": " ",
+            "keyColor": "#ff0012"
+        },
+        {
+            "type": "display",
+            "key": "󰍹 ",
+            "keyColor": "#ff0012"
         },
         {
             "type": "wm",
             "key": " ",
-            "keyColor": "red"
+            "keyColor": "#ff0012"
+        },
+        {
+            "type": "wmtheme",
+            "key": "󰉼 ",
+            "keyColor": "#ff0012"
+        },
+        {
+            "type": "theme",
+            "key": "󰉼 ",
+            "keyColor": "#ff0012"
+        },
+        {
+            "type": "icons",
+            "key": "󰀻 ",
+            "keyColor": "#ff0012"
+        },
+        {
+            "type": "font",
+            "key": " ",
+            "keyColor": "#ff0012"
         },
         {
             "type": "terminal",
+            "format": "{1}",
             "key": " ",
-            "keyColor": "red"
+            "keyColor": "#ff0012"
         },
         {
             "type": "cpu",
             "key": " ",
-            "keyColor": "red"
+            "keyColor": "#ff0012"
         },
         {
             "type": "gpu",
             "key": "󰢮 ",
-            "keyColor": "red"
+            "keyColor": "#ff0012"
         },
         {
             "type": "memory",
-            "key": " ",
-            "keyColor": "red"
+            "key": " ",
+            "keyColor": "#ff0012"
+        },
+        {
+            "type": "disk",
+            "key": " ",
+            "keyColor": "#ff0012"
         },
         "break",
         {

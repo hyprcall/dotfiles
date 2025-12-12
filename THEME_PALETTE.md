@@ -10,14 +10,3 @@
 | **text-main** | `#e6e6e6` | Soft White | Clock text, Main titles, Document text |
 | **text-dim** | `#b3b3b3` | Light Grey | Inactive module text, Subtitles, Comments |
 | **border-inactive** | `#1f1f1f` | Dark Grey | Inactive window borders, Separator lines |
-
----
-
-## 🔧 App-Specific Snippets
-
-### Hyprland (`hyprland.conf`)
-```ini
-general {
-    col.active_border = rgb(49b1f5)
-    col.inactive_border = rgb(1f1f1f)
-}

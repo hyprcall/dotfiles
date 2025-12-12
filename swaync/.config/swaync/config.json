@@ -13,7 +13,7 @@
     "title",
     "dnd",
     "mpris",
-    "buttons-grid#volume",
+    "volume",
     "buttons-grid",
     "notifications"
   ],
@@ -35,7 +35,7 @@
       ]
     },
     "volume": {
-      "label": " ",
+      "label": "\uf028 ",
       "show-per-app": true,
       "show-per-app-icon": true,
       "show-per-app-name": true,
@@ -47,19 +47,19 @@
     "buttons-grid": {
       "actions": [
         {
-          "label": "",
+          "label": "\uf06e",
           "command": "/home/hypr/.config/swaync/toggle_sunset.sh"
         },
         {
-          "label": "",
+          "label": "\uf023",
           "command": "hyprlock"
         },
         {
-          "label": "",
+          "label": "\uead2",
           "command": "systemctl reboot"
         },
         {
-          "label": "",
+          "label": "\uf011",
           "command": "systemctl poweroff"
         }
       ]
@@ -67,19 +67,19 @@
     "buttons-grid#volume": {
       "actions": [
         {
-          "label": "",
+          "label": "\uf027",
           "command": "pamixer -d 5"
         },
         {
-          "label": "",
+          "label": "\ueee8",
           "command": "pamixer -t"
         },
         {
-          "label": "",
+          "label": "\uf028",
           "command": "pamixer -i 5"
         },
         {
-          "label": "",
+          "label": "\uf085",
           "command": "pavucontrol"
         }
       ]
