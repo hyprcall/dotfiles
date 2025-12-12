@@ -48,6 +48,10 @@ I manage these dotfiles using **GNU Stow**.
 - **Shell:** Zsh
 - **Launcher:** Rofi
 - **System Info:** Fastfetch, Btop
+- **Notifications** SwayNC
+- **Music** Cider
+- **Editor** NeoVim
+- **Display Manager** SDDM
 
 ## 🚀 Installation
 
