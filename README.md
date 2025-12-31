@@ -52,6 +52,7 @@ I manage these dotfiles using **GNU Stow**.
 - **Music** Cider
 - **Editor** NeoVim
 - **Display Manager** SDDM
+- **TUI File Manager** Yazi
 
 ## 🚀 Installation
 
