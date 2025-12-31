@@ -135,3 +135,4 @@ eval "$(dircolors -b ~/.dircolors)"
 
 # -------- Gemini ----------
 alias gemini='cd ~/Gemini && gemini'
+export PATH=/home/hypr/.local/bin:/home/hypr/.local/share/zinit/polaris/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl:/opt/rocm/bin

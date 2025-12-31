@@ -1,0 +1,102 @@
+# Yazi Theme - Cybersecurity Dark (All Red)
+# Based on ~/dotfiles/THEME_PALETTE.md
+
+[mgr]
+cwd = { fg = "#ff0012" }
+
+# Hovered
+hovered         = { fg = "#0d0d0d", bg = "#ff0012" }
+preview_hovered = { underline = true }
+
+# Find
+find_keyword  = { fg = "#ff0012", italic = true }
+find_position = { fg = "#ff0012", bg = "reset", italic = true }
+
+# Marker
+marker_selected = { fg = "#ff0012", bg = "#ff0012" }
+marker_copied   = { fg = "#ff0012", bg = "#ff0012" }
+marker_cut      = { fg = "#ff0012", bg = "#ff0012" }
+
+# Tab
+tab_active   = { fg = "#0d0d0d", bg = "#ff0012" }
+tab_inactive = { fg = "#b3b3b3", bg = "#12110F" }
+tab_width    = 1
+
+# Count
+count_copied   = { fg = "#0d0d0d", bg = "#49b1f5" }
+count_cut      = { fg = "#0d0d0d", bg = "#49b1f5" }
+count_selected = { fg = "#0d0d0d", bg = "#ff0012" }
+
+# Border
+border_symbol = "│"
+border_style  = { fg = "#1f1f1f" }
+
+# Highlighting
+syntect_theme = "" # Use default or specific tmtheme if available
+
+[status]
+separator_open  = ""
+separator_close = ""
+separator_style = { fg = "#1f1f1f", bg = "#1f1f1f" }
+
+# Mode
+mode_normal = { fg = "#0d0d0d", bg = "#ff0012", bold = true }
+mode_select = { fg = "#0d0d0d", bg = "#ff0012", bold = true }
+mode_unset  = { fg = "#0d0d0d", bg = "#b3b3b3", bold = true }
+
+# Progress
+progress_label  = { fg = "#e6e6e6", bold = true }
+progress_normal = { fg = "#ff0012", bg = "#1f1f1f" }
+progress_error  = { fg = "#ff0012", bg = "#1f1f1f" }
+
+# Permissions
+permissions_t = { fg = "#ff0012" }
+permissions_r = { fg = "#ff0012" }
+permissions_w = { fg = "#ff0012" }
+permissions_x = { fg = "#ff0012" }
+permissions_s = { fg = "#b3b3b3" }
+
+[input]
+border   = { fg = "#ff0012" }
+title    = {}
+value    = {}
+selected = { fg = "#0d0d0d", bg = "#ff0012" }
+
+[select]
+border   = { fg = "#ff0012" }
+active   = { fg = "#ff0012" }
+inactive = {}
+
+[tasks]
+border  = { fg = "#ff0012" }
+title   = {}
+hovered = { underline = true }
+
+[which]
+cols            = 3
+mask            = { bg = "#1f1f1f" }
+cand            = { fg = "#ff0012" }
+rest            = { fg = "#b3b3b3" }
+desc            = { fg = "#ff0012" }
+separator       = "  "
+separator_style = { fg = "#1f1f1f" }
+
+[filetype]
+rules = [
+	# Directories
+	{ mime = "inode/directory", fg = "#ff0012", bold = true },
+	# Images
+	{ mime = "image/*", fg = "#ff0012" },
+	# Videos
+	{ mime = "video/*", fg = "#b3b3b3" },
+	# Audio
+	{ mime = "audio/*", fg = "#b3b3b3" },
+	# Archives
+	{ mime = "application/*zip", fg = "#ff0012" },
+	{ mime = "application/x-tar", fg = "#ff0012" },
+	{ mime = "application/x-bzip2", fg = "#ff0012" },
+	{ mime = "application/x-7z-compressed", fg = "#ff0012" },
+	{ mime = "application/x-rar", fg = "#ff0012" },
+	# Fallback
+	{ name = "*", fg = "#e6e6e6" }
+]
