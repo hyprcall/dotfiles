@@ -38,8 +38,25 @@ require("lazy").setup({
       require("nvim-tree").setup({})
     end,
   },
+  {
+    "MeanderingProgrammer/render-markdown.nvim",
+    ft = "markdown",
+    dependencies = {
+      "nvim-treesitter/nvim-treesitter",
+      "MunifTanjim/nui.nvim",
+    },
+    opts = {
+      code = { enabled = true, style = "full", width = "full" },
+      heading = { enabled = true, style = "full", width = "full" },
+    },
+  },
 })
 
 -- Toggle file explorer with <Space> + e
 vim.keymap.set('n', '<leader>e', ':NvimTreeToggle<CR>', { noremap = true, silent = true })
 
+-- Sync clipboard between OS and Neovim.
+-- Schedule the setting after `UiEnter` because it can increase startup-time.
+vim.schedule(function()
+  vim.opt.clipboard = 'unnamedplus'
+end)

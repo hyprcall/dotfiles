@@ -1,0 +1,129 @@
+/* Global Defaults */
+* {
+    color: #e6e6e6; /* text-main */
+    selection-background-color: #ff0012; /* accent-primary */
+    selection-color: #0d0d0d; /* bg-deep */
+}
+
+/* Main Window Background */
+window {
+    background-color: #0d0d0d; /* bg-deep */
+}
+
+/* Ensure containers don't have white backgrounds */
+box, grid, stack {
+    background-color: transparent;
+}
+
+/* Notebook (Tabs) Container */
+notebook {
+    background-color: #0d0d0d;
+    border: none;
+}
+
+notebook header {
+    background-color: #0d0d0d;
+    border-bottom: 1px solid #1f1f1f;
+}
+
+notebook stack {
+    background-color: #0d0d0d;
+}
+
+/* Tab Headers */
+tab {
+    background-color: #12110F; /* bg-surface */
+    color: #b3b3b3; /* text-dim */
+    border: 1px solid #1f1f1f;
+    margin: 2px;
+    padding: 6px 12px;
+    border-radius: 6px 6px 0 0;
+}
+
+tab:hover {
+    background-color: #49b1f5; /* accent-secondary */
+    color: #0d0d0d;
+}
+
+tab:checked {
+    background-color: #ff0012; /* accent-primary */
+    color: #0d0d0d;
+}
+
+/* Buttons (Generic) */
+button {
+    background-color: #12110F; /* bg-surface */
+    color: #e6e6e6; /* text-main */
+    border: 1px solid #1f1f1f; /* border-inactive */
+    border-radius: 8px;
+    padding: 8px 16px;
+    box-shadow: none;
+    text-shadow: none;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #ff0012; /* accent-primary */
+    color: #0d0d0d;
+    border-color: #ff0012;
+}
+
+button:active {
+    background-color: #b3000d; /* darker accent */
+    color: #e6e6e6;
+}
+
+button:disabled {
+    background-color: #0d0d0d;
+    color: #555555;
+    border-color: #1f1f1f;
+}
+
+/* Fix for label inside buttons explicitly */
+button label {
+    color: inherit;
+}
+
+/* Image Cards (Previews) */
+.image_card {
+    background-color: #12110F; /* bg-surface */
+    border: 1px solid #1f1f1f;
+    border-radius: 12px;
+    padding: 10px;
+    margin: 10px;
+}
+
+.image_card:hover {
+    border-color: #ff0012; /* accent-primary */
+}
+
+/* Labels */
+label {
+    color: #e6e6e6;
+}
+
+.image_label {
+    font-weight: bold;
+    color: #e6e6e6;
+}
+
+/* Specific Button Fixes found in strings */
+#region_button, .region_button {
+    font-weight: bold;
+}
+
+/* Scrollbars - Minimalist to match swaync feel */
+scrollbar trough {
+    background-color: #0d0d0d;
+}
+
+scrollbar slider {
+    background-color: #1f1f1f;
+    border-radius: 10px;
+    min-width: 6px;
+    min-height: 6px;
+}
+
+scrollbar slider:hover {
+    background-color: #ff0012;
+}

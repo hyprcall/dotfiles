@@ -90,6 +90,8 @@
 
 /* --- Right Modules --- */
 #mpris,
+#custom-htb_vpn,
+#custom-htb_target,
 #bluetooth,
 #pulseaudio,
 #network,
@@ -107,6 +109,8 @@
 #bluetooth:hover,
 #pulseaudio:hover,
 #network:hover,
+#custom-htb_vpn:hover,
+#custom-htb_target:hover,
 #custom-lock:hover {
   background-color: rgb(41, 42, 53);
 }
@@ -129,6 +133,8 @@
 #user { color: #ff0012; }
 
 #mpris,
+#custom-htb_vpn,
+#custom-htb_target,
 #cpu,
 #pulseaudio,
 #network,
