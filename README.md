@@ -1,19 +1,19 @@
 # My Arch Linux Dotfiles
 
 > **Established:** November 2025  
-> **Theme:** Code Red / HyprCall
+> **Theme:** Code Red
 
 ## 👋 Introduction
 
 Welcome to my personal configuration repository! 
 
-This is my **first attempt** at creating and managing a dotfiles repo. I started my journey with Arch Linux in **November 2025**, diving headfirst into the ecosystem. 
+This is my **first attempt** at creating and managing a dotfiles repo. I started my journey with Arch Linux in **November 2025**, diving headfirst into the ecosystem. As a university student, keeping this repository updated is a significant and ongoing project for me.
 
 ## 🧪 The "Frankenstein" Build
 
-I'll be honest—this configuration is a bit of a Frankenstein build. 
+I will be honest, this configuration is a bit of a Frankenstein build. 
 
-I have stitched together code, stylesheets, and scripts from countless other repositories, forums, and documentation pages. There are too many sources to name individually, but I've learned a massive amount by dissecting other people's work, editing it to fit my needs, and writing my own glue code where necessary.
+I have stitched together code, stylesheets, and scripts from countless other repositories, forums, and documentation pages. There are too many sources to name individually, but I have learned a massive amount by dissecting other people's work, editing it to fit my needs, and writing my own glue code where necessary.
 
 If you recognize something here, credit likely belongs to the community at large!
 
@@ -29,13 +29,15 @@ Here is what the current setup looks like:
 
 ## 🎨 Aesthetic & Palette
 
-The setup follows a **"Code Red"** aesthetic, featuring deep blacks/greys with a sharp **Red (#ff0012)** primary accent.
+The setup follows a **"Code Red"** aesthetic, featuring deep blacks and greys with a sharp **Red (#ff0012)** primary accent. The active window border uses a sleek gradient from dark Burgundy to vivid Red. A **Sky Blue (#49b1f5)** acts as a secondary accent, primarily used for text selections and hover states.
 
 | Element | Color | Hex |
 | :--- | :--- | :--- |
 | **Primary Accent** | Red | `#ff0012` |
 | **Secondary Accent** | Sky Blue | `#49b1f5` |
-| **Background** | Deep Black | `#0d0d0d` |
+| **Active Border Gradient** | Burgundy to Red | `#3c1d25` to `#ff0000` |
+| **Background Base** | Deep Black | `#0d0d0d` |
+| **Surface Grey** | Surface Grey | `#12110F` |
 
 ## 🛠️ Software Stack
 
@@ -46,12 +48,14 @@ I manage these dotfiles using **GNU Stow**.
 - **Bar:** Waybar
 - **Terminal:** WezTerm
 - **Shell:** Zsh
-- **Launcher:** Rofi
+- **Launcher / Menus:** Rofi
 - **System Info:** Fastfetch, Btop
-- **Notifications** SwayNC
-- **Music** Cider
-- **Editor** NeoVim
-- **Display Manager** SDDM
+- **File Managers:** Yazi, Lsd
+- **Notifications:** SwayNC
+- **Music:** Cider
+- **Editor:** Neovim
+- **Display Manager:** SDDM
+- **Extras:** Custom Rofi Recorder, Hyprland Preview Share Picker
 
 ## 🚀 Installation
 

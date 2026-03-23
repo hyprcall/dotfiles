@@ -1,12 +1,13 @@
-# 🎨 HyprCall Theme Palette
-> "Cybersecurity Dark" aesthetic based on hyprcall.com
+# 🎨 Code Red Theme Palette
+> A deep, dark aesthetic with sharp red contrasts.
 
-| Variable Name | Hex Code  | Visual Description | Usage Examples |
+| Variable Name | Hex Code | Visual Description | Usage Examples |
 | :--- | :--- | :--- | :--- |
-| **bg-deep** | `#0d0d0d` | Deepest Black/Grey | Wallpaper, Terminal Background, Lock Screen Base |
-| **bg-surface** | `#12110F` | Surface Grey | Waybar modules, Rofi window, Floating windows |
-| **accent-primary** | `#49b1f5` | **Sky Blue** | **Active Window Border**, Active Workspace, Links, Folder Icons |
-| **accent-secondary**| `#ff0012` | **Red** | "Urgent" alerts, Errors, Close buttons, Hover states |
-| **text-main** | `#e6e6e6` | Soft White | Clock text, Main titles, Document text |
-| **text-dim** | `#b3b3b3` | Light Grey | Inactive module text, Subtitles, Comments |
-| **border-inactive** | `#1f1f1f` | Dark Grey | Inactive window borders, Separator lines |
+| **bg-deep** | `#0d0d0d` | Deepest Black | WezTerm background, global backdrop |
+| **bg-surface** | `#12110F` | Surface Grey | Waybar modules, Rofi window background |
+| **accent-primary** | `#ff0012` | **Sharp Red** | Rofi selected items, active workspace text, active cursor, errors |
+| **accent-secondary**| `#49b1f5` | **Sky Blue** | Text selections, Waybar hover states, Bluetooth connected state |
+| **border-active** | `#3c1d25` to `#ff0000` | **Burgundy to Red** | Hyprland active window border gradient |
+| **border-inactive** | `#121212` | Dark Grey | Hyprland inactive window borders |
+| **text-main** | `#e6e6e6` | Soft White | Standard document text, Rofi text, WezTerm foreground |
+| **text-dim** | `#b3b3b3` | Light Grey | Inactive module text, placeholder text |
