@@ -13,6 +13,7 @@
     "clock"
   ],
   "modules-right": [
+    "custom/recorder",
     "mpris",
     "bluetooth",
     "custom/htb_vpn",
@@ -98,6 +99,15 @@
       ]
     },
     "on-click": "pavucontrol"
+  },
+  "custom/recorder": {
+    "signal": 10,
+    "format": "{}",
+    "return-type": "json",
+    "interval": 2,
+    "exec": "~/.config/recorder/status.sh",
+    "on-click": "~/.config/recorder/menu.sh",
+    "tooltip": false
   },
   "custom/lock": {
     "tooltip": false,

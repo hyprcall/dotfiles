@@ -96,6 +96,7 @@
 #pulseaudio,
 #network,
 #custom-notification,
+#custom-recorder,
 #custom-lock {
   background-color: #12110F;
   padding: 0.3rem 0.7rem;
@@ -111,12 +112,13 @@
 #network:hover,
 #custom-htb_vpn:hover,
 #custom-htb_target:hover,
+#custom-recorder:hover,
 #custom-lock:hover {
   background-color: rgb(41, 42, 53);
 }
 
 /* Rounded ends */
-#bluetooth {
+#custom-recorder {
   border-top-left-radius: 6px;
   border-bottom-left-radius: 6px;
 }
@@ -148,6 +150,16 @@
 #bluetooth { color: #e6e6e6; font-size: 16px; }
 #bluetooth.on { color: #ff0012; }
 #bluetooth.connected { color: #49b1f5; }
+
+/* --- Recorder Module --- */
+@keyframes pulse {
+  0% { color: #555555; }
+  50% { color: #ff0012; }
+  100% { color: #555555; }
+}
+#custom-recorder { color: #555555; animation: none; }
+#custom-recorder.idle { color: #555555; animation: none; }
+#custom-recorder.recording { animation: pulse 2s infinite; }
 
 /* --- Tooltip --- */
 tooltip {
