@@ -8,7 +8,7 @@ hl.env("NVD_BACKEND",                  "direct")
 hl.env("GBM_BACKEND",                  "nvidia-drm")
 hl.env("VDPAU_DRIVER",                 "nvidia")
 hl.env("__GL_SHADER_DISK_CACHE_SKIP_CLEANUP", "1")
-hl.env("__GL_SHADER_DISK_CACHE_SIZE",  "5000000000")
+hl.env("__GL_SHADER_DISK_CACHE_SIZE",  "12000000000")
 
 -- Toolkit Backend
 hl.env("GDK_BACKEND", "wayland,x11,*")
