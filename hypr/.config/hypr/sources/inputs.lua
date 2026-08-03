@@ -1,0 +1,30 @@
+-- Inputs and other peripherals
+hl.config({
+    input = {
+        kb_layout  = "us",
+        kb_variant = "",
+        kb_model   = "",
+        kb_options = "",
+        kb_rules   = "",
+        numlock_by_default = true,
+
+        follow_mouse = 1,
+
+        sensitivity = 0,
+
+        touchpad = {
+            natural_scroll = false,
+        },
+    },
+})
+
+hl.gesture({
+    fingers   = 3,
+    direction = "horizontal",
+    action    = "workspace",
+})
+
+hl.device({
+    name   = "opentabletdriver-virtual-artist-tablet",
+    output = "current",
+})
